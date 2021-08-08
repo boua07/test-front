@@ -1,0 +1,1425 @@
+<div class="wrapper">
+    <div class="d-flex dummy-div">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ureachModalCenterA">
+        Click here 
+      </button>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade ureach-custom-modal" id="ureachModalCenterA" tabindex="-1" role="dialog" aria-labelledby="ureachModalCenterATitle" style="display: none;" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle"><span class="icon"><img src="../../assets/images/folder-add.svg"></span> Ajouter un dossier</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&nbsp;</span>
+            </button>
+          </div>
+          <div class="modal-tab">
+            <div class="top-tab-section">
+              <div class="tab-wrap">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="addDetails-tab" data-toggle="tab" href="#addDetails" role="tab" aria-controls="addDetails" aria-selected="true">Détails</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="addFormation-tab" data-toggle="tab" href="#addFormation" role="tab" aria-controls="addFormation" aria-selected="false">Formation</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="addCoach-tab" data-toggle="tab" href="#addCoach" role="tab" aria-controls="addCoach" aria-selected="false">Coach</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="addCertification-tab" data-toggle="tab" href="#addCertification" role="tab" aria-controls="addCertification" aria-selected="false">Certifications</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="addPreEvaluation-tab" data-toggle="tab" href="#addPreEvaluation" role="tab" aria-controls="addPreEvaluation" aria-selected="true">Pré-Évaluation</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="addEvaluation-tab" data-toggle="tab" href="#addEvaluation" role="tab" aria-controls="addEvaluation" aria-selected="false">Évaluation</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="addCRCoach-tab" data-toggle="tab" href="#addCRCoach" role="tab" aria-controls="addCRCoach" aria-selected="false">CR Coach</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="addFacturation-tab" data-toggle="tab" href="#addFacturation" role="tab" aria-controls="addFacturation" aria-selected="false">Facturation</a>
+                  </li>
+                  
+                  <li class="nav-item ad-foler-btn folder-btnOne">
+                    <a class="nav-link" id="sideButtonA-tab" data-toggle="tab" href="#sideButtonA" role="tab" aria-controls="sideButtonA" aria-selected="false"><img src="../../assets/images/clock.svg"></a>
+                  </li>
+                  <li class="nav-item ad-foler-btn folder-btnTwo">
+                    <a class="nav-link" id="sideButtonB-tab" data-toggle="tab" href="#sideButtonB" role="tab" aria-controls="sideButtonB" aria-selected="false"><img src="../../assets/images/timer.svg"></a>
+                  </li>
+                </ul>
+                <!-- <div class="ad-folder">
+                  <div class="btn"><span><img src="../../assets/images/clock.svg"></span></div>
+                  <div class="btn"><span><img src="../../assets/images/timer.svg"></span></div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content" id="addFolderContent">
+            <div class="tab-pane fade show active" id="addDetails" role="tabpanel" aria-labelledby="addDetails-tab">
+              <div class="modal-body pop-content">
+                <div class="title">
+                  <h3>Informations générales</h3>
+                </div>
+                <div class="form-wrap">
+                  <div class="form-item">
+                    <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/ic-1.svg"></span>Type <b>*</b></div>
+                    <div class="ui dropdown input-w-142" tabindex="0">
+                      <div class="text">Prospect</div>
+                      <i class="ic-down icon dropdown icon" tabindex="0"><div class="menu" tabindex="-1"></div></i>
+                      <div class="menu" tabindex="-1">
+                        <div class="item">Prospect</div>
+                        <div class="item">Client </div>
+                      </div>
+                    </div>
+                  </div> <!-- item closed here -->
+                  <div class="form-item">
+                    <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/folder-tick.svg"></span>Statut <b>*</b></div>
+                    <div class="ui dropdown circular-drop input-w-142" tabindex="0">
+                      <div class="text">Validé</div>
+                      <i class="ic-down icon dropdown icon" tabindex="0"><div class="menu" tabindex="-1"></div></i>
+                      <div class="menu transition hidden" tabindex="-1">
+                        <div class="item"><div class="ui color-1 empty circular label"></div>À traiter</div>
+                        <div class="item"><div class="ui color-2 empty circular label"></div>En attente</div>
+                        <div class="item"><div class="ui color-3 empty circular label"></div>Entrée à faire</div>
+                        <div class="item"><div class="ui color-4 empty circular label"></div>En formation</div>
+                        <div class="item"><div class="ui color-5 empty circular label"></div>Évaluation à faire</div>
+                        <div class="item"><div class="ui color-6 empty circular label"></div>Service à déclarer</div>
+                        <div class="item"><div class="ui color-7 empty circular label"></div>Service déclaré</div>
+                        <div class="item"><div class="ui color-8 empty circular label"></div>Facturé</div>
+                        <div class="item"><div class="ui color-9 empty circular label"></div>Payé</div>
+                        <div class="item"><div class="ui color-10 empty circular label"></div>Annulé</div>
+                        <div class="item"><div class="ui color-11 empty circular label"></div>Signatures à faire</div>
+                        <div class="item"><div class="ui color-12 empty circular label"></div>À rappeler</div>
+                        
+                      </div>
+                    </div>
+                  </div> <!-- item closed here -->
+                  <div class="form-item evaluation">
+                    <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/call.svg"></span>Statut Prospection <b>*</b></div>
+                    <div class="ui dropdown dropdown-tabs input-w-186" tabindex="0">
+                      <div class="text">Pre-evaluation</div>
+                      <i class="ic-down icon dropdown icon" tabindex="0"><div class="menu" tabindex="-1"></div></i>
+                      <div class="menu transition hidden" tabindex="-1">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active" id="home-tabA" data-toggle="tab" href="#firstTab" role="tab" aria-controls="firstTab" aria-selected="true">Tous</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" id="second-tab" data-toggle="tab" href="#secondTab" role="tab" aria-controls="secondTab" aria-selected="false">Aucun</a>
+                          </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                          <div class="tab-pane fade show active" id="firstTab" role="tabpanel" aria-labelledby="home-tabA">
+                            <div class="item">Aucun</div>
+                            <div class="item">Pré-évaluation</div>
+                            <div class="item">Confirmé</div>
+                            <div class="item">Dossier oK</div>
+                            <div class="item">En attente regie</div>
+                            <div class="item">Annule</div>
+                            <div class="item">Avoir</div>
+                            <div class="item">NRP</div>
+                            <div class="item">Injoignable</div>
+                            <div class="item">À rappeler</div>
+                            <div class="item">Hors budget</div>
+                            <div class="item">Hors cible</div>
+                            <div class="item">Me rappelle</div>
+                            <div class="item">Faux numéro</div>
+                            <div class="item">refus</div>
+                            <div class="item">hors catalogue</div>
+
+                          </div>
+                          <div class="tab-pane fade" id="secondTab" role="tabpanel" aria-labelledby="second-tab">
+                            <div class="item">1 Aucun</div>
+                            <div class="item">Pré-évaluation</div>
+                            <div class="item">Confirmé</div>
+                            <div class="item">Dossier oK</div>
+                            <div class="item">En attente regie</div>
+                            <div class="item">Annule</div>
+                            <div class="item">Avoir</div>
+                            <div class="item">NRP</div>
+                            <div class="item">Injoignable</div>
+                            <div class="item">À rappeler</div>
+                            <div class="item">Hors budget</div>
+                            <div class="item">Hors cible</div>
+                            <div class="item">Me rappelle</div>
+                            <div class="item">Faux numéro</div>
+                            <div class="item">refus</div>
+                            <div class="item">hors catalogue</div>
+                          </div>
+                        </div>
+                        
+                        
+                      </div>
+                    </div>
+                  </div> <!-- item closed here -->
+                  <div class="form-item">
+                    <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/ic-3.svg"></span>Provenance <b>*</b></div>
+                    <div class="ui dropdown input-w-172" tabindex="0">
+                      <div class="text">Rise Up</div>
+                      <i class="ic-down icon dropdown icon" tabindex="0"><div class="menu" tabindex="-1"></div></i>
+                      <div class="menu transition hidden" tabindex="-1">
+                        <div class="item">Rise Up One</div>
+                        <div class="item">Rise Up Two</div>
+                      </div>
+                    </div>
+                  </div> <!-- item closed here -->
+                  <div class="form-item">
+                    <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/ic-4.svg"></span>Vendeur <b>*</b></div>
+                    <div class="ui dropdown input-w-178" tabindex="0">
+                      <div class="text">Bouachir Ahmed</div>
+                      <i class="ic-down icon dropdown icon" tabindex="0"><div class="menu" tabindex="-1"></div></i>
+                      <div class="menu" tabindex="-1">
+                        <div class="item">Bouachir Ahmed One</div>
+                        <div class="item">Bouachir Ahmed Two</div>
+                      </div>
+                    </div>
+                  </div> <!-- item closed here -->
+                  <div class="form-item">
+                    <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/ic-5.svg"></span>Catégorie <b>*</b></div>
+                    <div class="ui dropdown input-w-184 particulier-drop" tabindex="0">
+                      <div class="text">Particulier</div>
+                      <i class="ic-down icon dropdown icon" tabindex="0"><div class="menu" tabindex="-1"></div></i>
+                      <div class="menu transition hidden" tabindex="-1">
+                        <div class="item"><span class="icon"><img src="../../assets/images/people.svg"></span>Particulier</div>
+                        <div class="item"><span class="icon"><img src="../../assets/images/buildings.svg"></span>Entreprise</div>
+                      </div>
+                    </div>
+                  </div> <!-- item closed here -->
+                </div>
+                <div class="title title-two">
+                  <h3>Informations client</h3>
+                </div>
+                <div class="form-wrap form-wrap-1">
+                  <div class="form-item">
+                    <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/ic-6.svg"></span>Civilité <b>*</b></div>
+                    <div class="ui dropdown input-w-115" tabindex="0">
+                      <div class="text">MR</div>
+                      <i class="ic-down icon dropdown icon" tabindex="0"><div class="menu" tabindex="-1"></div></i>
+                      <div class="menu" tabindex="-1">
+                        <div class="item">MR</div>
+                        <div class="item">MME</div>
+                      </div>
+                    </div>
+                  </div> <!-- item closed here -->
+                  <div class="form-item">
+                    <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/ic-10.svg"></span>Nom <b>*</b></div>
+                    <div class="ui icon input custom-input input-w-190">
+                      <input type="text">
+                    </div>
+                  </div> <!-- item closed here -->
+                  <div class="form-item">
+                    <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/ic-10.svg"></span>Prénom <b>*</b></div>
+                    <div class="ui icon input custom-input input-w-192">
+                      <input type="text">
+                    </div>
+                  </div> <!-- item closed here -->
+                  <div class="form-item">
+                    <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/ic-11.svg"></span>Téléphone <b>*</b></div>
+                    <div class="ui icon input custom-input input-w-210">
+                      <input type="tel">
+                    </div>
+                  </div> <!-- item closed here -->
+                  <div class="form-item">
+                    <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/ic-12.svg"></span>E-mail <b>*</b></div>
+                    <div class="ui icon input custom-input input-w-316">
+                      <input type="email">
+                    </div>
+                  </div> <!-- item closed here -->
+                </div>
+                <div class="form-wrap">
+                  <div class="form-item">
+                    <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/ic-13.svg"></span>Adresse</div>
+                    <div class="ui icon input custom-input input-w-240">
+                      <input type="text">
+                    </div>
+                  </div> <!-- item closed here -->
+                  <div class="form-item">
+                    <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/ic-14.svg"></span>Code Postal</div>
+                    <div class="ui icon input custom-input input-w-154">
+                      <input type="text">
+                    </div>
+                  </div> <!-- item closed here -->
+                  <div class="form-item">
+                    <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/ic-15.svg"></span>Ville</div>
+                    <div class="ui icon input custom-input input-w-106">
+                      <input type="tel">
+                    </div>
+                  </div> <!-- item closed here -->
+                  <div class="form-item">
+                    <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/ic-16.svg"></span>Budget CPF</div>
+                    <div class="ui icon input custom-input input-w-150">
+                      <input type="email">
+                    </div>
+                  </div> <!-- item closed here -->
+                  <div class="form-item">
+                    <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/ic-16.svg"></span>Budget OPCO</div>
+                    <div class="ui icon input custom-input input-w-164">
+                      <input type="email">
+                    </div>
+                  </div> <!-- item closed here -->
+                  <div class="form-item">
+                    <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/ic-16.svg"></span>Autre budget</div>
+                    <div class="ui icon input custom-input input-w-190Two">
+                      <input type="email">
+                    </div>
+                  </div> <!-- item closed here -->
+                </div>
+              </div>
+            </div> <!-- tab one content closed one-->
+            <div class="tab-pane fade show" id="addFormation" role="tabpanel" aria-labelledby="addFormation-tab">
+              <div class="modal-body pop-content">
+                <div class="col">
+                  <div class="col-left">
+                    <div class="title">
+                      <h3>Informations générales</h3>
+                    </div>
+                    <div class="form-wrap type-2">
+                      <div class="form-item">
+                        <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/ic-17.svg"></span>Formation <b>*</b></div>
+                        <div class="ui icon input custom-input input-w-300">
+                          <input type="text" placeholder="Anglais niveau débutant PIPPLET FLEX">
+                        </div>
+                      </div>
+                      <div class="form-item">
+                        <div class="ui dropdown formation-drop" tabindex="0">
+                          <i class="dropdown ic-folder-tick" tabindex="0"><div class="menu" tabindex="-1"></div></i>
+                          <div class="text">Réalisation de la formation</div>
+                          <i class="ic-down icon dropdown " tabindex="0"><div class="menu" tabindex="-1"></div></i>
+                          <div class="menu" tabindex="-1">
+                            <div class="item">Effectuée</div>
+                            <div class="item">Abandonnée</div>
+                            <div class="item">Abandonnée [Force majeur]</div>
+                            <div class="item">Le stagiaire ne s'est pas présenté</div>
+                            <div class="item">Annulée du fait de l'organisme</div>
+                            <div class="item">Annulée par le titulaire</div>
+                          </div>
+                        </div>  
+                      </div>
+                      <div class="form-item type-2">
+                        <div class="title-sec type-2">
+                          <div class="item"><span class="icon"><img src="../../assets/images/folder-icons/ic-18.svg"></span>Durée<b>*</b></div>
+                          <div class="item"><span class="value"><b>21</b> Heures</span></div>
+                        </div>
+                        <div class="title-sec type-2">
+                          <div class="item"><span class="icon"><img src="../../assets/images/folder-icons/ic-19.svg"></span>Intensité hebdomadaire<b>*</b></div>
+                          <div class="item"><span class="value"><b>21</b> Heures</span></div>
+                        </div>
+                      </div>  
+                    </div>
+                  </div>
+                  <div class="col-right">
+                    <div class="title">
+                      <h3>Prise en charge</h3>
+                    </div>
+                    <div class="form-wrap type-3">
+                      <div class="form-item">
+                          <div class="price-item">
+                            <div class="checkbox-item">
+                              <div class="ui checked checkbox">
+                                <input type="checkbox" checked="">
+                                <label>CPF</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="price-item">
+                            <div class="ui icon input custom-input input-w-76">
+                              <input type="text" placeholder="ex : 500">
+                            </div>
+                          </div>
+                      </div>
+                      <div class="form-item">
+                        <div class="price-item">
+                          <div class="checkbox-item">
+                            <div class="ui  checkbox">
+                              <input type="checkbox">
+                              <label>OPCO</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="price-item">
+                          <div class="ui icon input custom-input input-w-76">
+                            <input type="text" placeholder="ex : 500">
+                          </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="form-wrap type-4">
+                      <div class="form-item">
+                        <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/ic-20.svg"></span>Date d’entrée</div>
+                        <div class="form-calender input-w-160">
+                          <input type="text" id="datepicker1" placeholder="17/10/2021" class="hasDatepicker">
+                        </div>
+                      </div>
+                      <div class="form-item">
+                        <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/ic-20.svg"></span>Date d’entrée</div>
+                        <div class="form-calender input-w-160">
+                          <input type="text" id="datepicker2" placeholder="17/10/2021" class="hasDatepicker">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-wrap type-4">
+                      <div class="form-item">
+                        <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/ic-21.svg"></span>Date d’entrée</div>
+                        <div class="form-calender input-w-160">
+                          <input type="text" id="datepicker3" placeholder="17/10/2021" class="hasDatepicker">
+                        </div>
+                      </div>
+                      <div class="form-item">
+                        <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/ic-21.svg"></span>Date d’entrée</div>
+                        <div class="form-calender input-w-160">
+                          <input type="text" id="datepicker4" placeholder="17/10/2021" class="hasDatepicker">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- tab two content closed one-->
+            <div class="tab-pane fade show" id="addCoach" role="tabpanel" aria-labelledby="addCoach-tab">
+              <div class="modal-body pop-content content mCustomScrollbar _mCS_1 mCS_no_scrollbar"><div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 309px;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
+                <div class="top-sec">
+                    <div class="item-left item-block">
+                      <div class="title-sub">Votre formation est-elle coachée ?</div>
+                      <div class="input-items">
+                        <div class="input-item">
+                          <div class="field">
+                            <div class="ui radio checkbox radio-inline">
+                              <input type="radio" name="frequency">
+                              <label>Oui</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="input-item">
+                          <div class="field">
+                            <div class="ui radio checkbox radio-inline">
+                              <input type="radio" name="frequency">
+                              <label>Non</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item-right item-block">
+                      <div class="title-sub">Sélectionner le(s) coach(s)</div>
+                        <div class="form-wrap">
+                          <div class="form-item">
+                            <div class="ui dropdown primary-dropdown" tabindex="0">
+                              <i class="dropdown icon-copy" tabindex="0"><div class="menu" tabindex="-1"></div></i>
+                              <div class="text">Coachs mobilisés</div>
+                              <i class="ic-down icon dropdown " tabindex="0"><div class="menu" tabindex="-1"></div></i>
+                              <div class="menu" tabindex="-1">
+                                <div class="item">1 coach</div>
+                                <div class="item">2 coachs</div>
+                                <div class="item">3 coachs</div>
+                                <div class="item">4 coachs</div>
+                                <div class="item">5 coachs</div>
+                              </div>
+                            </div> 
+                          </div>
+                        </div>
+                          
+                    </div>
+                </div>
+                <div class="mid-sec">
+                  <div class="title-name">
+                      <span class="first">Coach <span class="primary">1</span>
+                      <span class="last"><b>.</b>Mehdi Tounsi</span>
+                  </span></div>
+                  <div class="form-wrap-cover">
+                    <div class="form-wrap type-4 w-300">
+                      <div class="form-item">
+                        <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/calendar-edit.svg" class="mCS_img_loaded"></span>1er RDV</div>
+                        <div class="item-wrap">
+                          <div class="left">
+                            <div class="form-calender input-w-160">
+                              <input type="text" id="datepicker5" placeholder="17/10/2021" class="hasDatepicker">
+                            </div>
+                          </div>
+                          <div class="right">
+                              <div class="form-wrap type-3">
+                                <div class="form-item">
+                                  <div class="price-item">
+                                    <div class="checkbox-item">
+                                      <div class="ui checked checkbox">
+                                        <input type="checkbox" checked="">
+                                        <label>Effectué</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-item">
+                        <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/calendar-edit.svg" class="mCS_img_loaded"></span>1er RDV</div>
+                        <div class="item-wrap">
+                          <div class="left">
+                            <div class="form-calender input-w-160">
+                              <input type="text" id="datepicker6" placeholder="17/10/2021" class="hasDatepicker">
+                            </div>
+                          </div>
+                          <div class="right">
+                              <div class="form-wrap type-3">
+                                <div class="form-item">
+                                  <div class="price-item">
+                                    <div class="checkbox-item">
+                                      <div class="ui checked checkbox">
+                                        <input type="checkbox" checked="">
+                                        <label>Effectué</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-wrap right-sec">
+
+                      <div class="form-sub">
+                        <div class="form-item">
+                          <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/timer.svg" class="mCS_img_loaded"></span>Nb minutes passées</div>
+                          <div class="item-wrap">
+                            <div class="left">
+                              <div class="ui icon input custom-input input-w-160">
+                                <input type="text" placeholder="" class="input-w-16s0">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-item">
+                          <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/search-status.svg" class="mCS_img_loaded"></span>Observation</div>
+                          <div class="item-wrap">
+                            <div class="left">
+                              <div class="ui icon input custom-input input-w-420">
+                                <input type="text" placeholder="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="form-sub">
+                        <div class="form-item">
+                          <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/timer.svg" class="mCS_img_loaded"></span>Nb minutes passées</div>
+                          <div class="item-wrap">
+                            <div class="left">
+                              <div class="ui icon input custom-input input-w-160">
+                                <input type="text" placeholder="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-item">
+                          <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/search-status.svg" class="mCS_img_loaded"></span>Observation</div>
+                          <div class="item-wrap">
+                            <div class="left">
+                              <div class="ui icon input custom-input input-w-420">
+                                <input type="text" placeholder="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
+            </div>
+            <div class="tab-pane fade show" id="addCertification" role="tabpanel" aria-labelledby="addCertification-tab">
+              <div class="modal-body pop-content">
+                <div class="certi-top">
+                  <div class="form-wrap ">
+                    <div class="form-left">
+                     <div class="form-item">
+                      <div class="title-sub">Si votre stagiaire a passé , ou s’apprête à passer sa certification, merci de renseigner ses identifiants ci-dessous.</div>
+                     </div>
+                      <div class="form-sub">
+                        <div class="form-item">
+                          <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/ic-4.svg"></span>Identifiant</div>
+                          <div class="item-wrap">
+                            <div class="left">
+                              <div class="ui icon input custom-input input-w-344">
+                                <input type="text" placeholder="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-item">
+                          <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/key.svg"></span>Mot de passe</div>
+                          <div class="item-wrap">
+                            <div class="left">
+                              <div class="ui icon input custom-input input-w-344">
+                                <input type="text" placeholder="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-right">
+                      <div class="col-left">
+                        <div class="form-sub">
+                          <div class="form-item">
+                            <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/award.svg"></span>Certification visée</div>
+                            <div class="item-wrap">
+                              <div class="left">
+                                <div class="ui icon input custom-input input-w-250">
+                                  <input type="text" placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-item">
+                            <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/teacher.svg"></span>Certificateur</div>
+                            <div class="item-wrap">
+                              <div class="left">
+                                <div class="ui icon input custom-input input-w-250">
+                                  <input type="text" placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-item">
+                            <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/bookmark.svg"></span>URL Certification</div>
+                            <div class="item-wrap">
+                              <div class="left">
+                                <div class="ui icon input custom-input input-w-250">
+                                  <input type="text" placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-item">
+                            <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/ic-16.svg"></span>Prix</div>
+                            <div class="item-wrap">
+                              <div class="left">
+                                <div class="ui icon input custom-input input-w-250">
+                                  <input type="text" placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-right image"><img src="../../assets/images/certifiacte-img.png"></div>
+                        
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade show" id="addPreEvaluation" role="tabpanel" aria-labelledby="addPreEvaluation-tab">
+              <div class="modal-body pop-content">
+                                 
+              </div>
+            </div>
+            <div class="tab-pane fade show" id="addEvaluation" role="tabpanel" aria-labelledby="addEvaluation-tab">
+              <div class="modal-body pop-content content mCustomScrollbar _mCS_2 mCS_no_scrollbar"><div id="mCSB_2" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 309px;" tabindex="0"><div id="mCSB_2_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
+                <div class="certi-top evaluation-content">
+                  <div class="form-wrap">
+                    <div class="form-left">
+                      <div class="title-large ">Attentes et motivations <span class="info" data-tooltip="Quelles étaient vos attentes pour cette formation ?" data-position="right center"><img src="../../assets/images/info-gray.svg" class="mCS_img_loaded"></span></div>
+                      <div class="check-wrap margin-botom">
+                        <div class="form-sub">
+                          <div class="form-item">
+                            <div class="price-item">
+                              <div class="checkbox-item">
+                                <div class="ui checked checkbox">
+                                  <input type="checkbox" checked="">
+                                  <label>Découverte de la thématique</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-item">
+                            <div class="price-item">
+                              <div class="checkbox-item">
+                                <div class="ui checked checkbox">
+                                  <input type="checkbox">
+                                  <label>Développer ses connaissances</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-item">
+                          <div class="price-item">
+                            <div class="checkbox-item">
+                              <div class="ui checked checkbox">
+                                <input type="checkbox">
+                                <label>Élargissement des compétences professionnelles</label>
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+                          <div class="form-item">
+                        <div class="price-item">
+                          <div class="checkbox-item">
+                            <div class="ui checked checkbox">
+                              <input type="checkbox" checked="">
+                              <label>Autres</label>
+                            </div>
+                          </div>
+                        </div>
+                          </div>
+                      </div>
+                      </div>
+                      <div class="title-large">Déroulement de la formation
+                        <span class="info" data-tooltip="Quelles étaient vos attentes pour cette formation ?" data-position="right center"><img src="../../assets/images/info-gray.svg" class="mCS_img_loaded"></span>
+                      </div>
+                      <div class="check-wrap margin-botom">
+                        <div class="form-sub">
+                          <div class="form-item">
+                            <div class="price-item">
+                              <div class="checkbox-item">
+                                <div class="ui checked checkbox">
+                                  <input type="checkbox" checked="">
+                                  <label>Adaptée</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-item">
+                            <div class="price-item">
+                              <div class="checkbox-item">
+                                <div class="ui checked checkbox">
+                                  <input type="checkbox">
+                                  <label>Trop courte</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-item">
+                          <div class="price-item">
+                            <div class="checkbox-item">
+                              <div class="ui checked checkbox">
+                                <input type="checkbox">
+                                <label>Trop longue</label>
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+                          
+                      </div>
+                      </div>
+                      <div class="title-large">Prochaines attentes
+                        <span class="info" data-tooltip="Quelles étaient vos attentes pour cette formation ?" data-position="right center"><img src="../../assets/images/info-gray.svg" class="mCS_img_loaded"></span>
+                      </div>
+                      <div class="check-wrap">
+                        <div class="textarea">
+                          <textarea></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-right">
+                      <div class="top-sec">
+                        <div class="item-block">
+                          <div class="form-sub">
+                            <div class="form-item">
+                              <div class="title-large">Satisfaction</div>
+                              <div class="title-sub">Estimez-vous que cette formation a été ?</div>
+                              <div class="input-items">
+                                <div class="input-item">
+                                  <div class="field">
+                                    <div class="ui radio checkbox radio-inline w-116 selected">
+                                      <input type="radio" name="item1" checked="">
+                                      <label>Très profitable</label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="input-item">
+                                  <div class="field">
+                                    <div class="ui radio checkbox radio-inline w-120">
+                                      <input type="radio" name="item1">
+                                      <label>Peu profitable</label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="input-item">
+                                  <div class="field">
+                                    <div class="ui radio checkbox radio-inline w-100">
+                                      <input type="radio" name="item1">
+                                      <label>Profitable</label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="input-item">
+                                  <div class="field">
+                                    <div class="ui radio checkbox radio-inline w-168">
+                                      <input type="radio" name="item1">
+                                      <label>Moyennement profitable</label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="input-item">
+                                  <div class="field">
+                                    <div class="ui radio checkbox radio-inline w-168">
+                                      <input type="radio" name="item1">
+                                      <label>Moyennement profitable</label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-item">
+                              <div class="title-sub">Avez-vous des questions restées sans réponse</div>
+                              <div class="input-items">
+                                <div class="input-item">
+                                  <div class="field">
+                                    <div class="ui radio checkbox radio-inline selected">
+                                      <input type="radio" name="item2" checked="">
+                                      <label>Oui</label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="input-item">
+                                  <div class="field">
+                                    <div class="ui radio checkbox radio-inline">
+                                      <input type="radio" name="item2">
+                                      <label>Non</label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-item">
+                              <div class="title-sub">Votre avis : Plateforme e-learning</div>
+                              <div class="input-items">
+                                <div class="input-item">
+                                  <div class="field">
+                                    <div class="ui radio checkbox radio-inline w-140 selected">
+                                      <input type="radio" name="item3" checked="">
+                                      <label>Très satisfaisant</label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="input-item">
+                                  <div class="field">
+                                    <div class="ui radio checkbox radio-inline w-140">
+                                      <input type="radio" name="item3">
+                                      <label>Satisfaisant</label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="input-item">
+                                  <div class="field">
+                                    <div class="ui radio checkbox radio-inline w-140">
+                                      <input type="radio" name="item3">
+                                      <label>Peu satisfaisant</label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="input-item">
+                                  <div class="field">
+                                    <div class="ui radio checkbox radio-inline w-140">
+                                      <input type="radio" name="item3">
+                                      <label>Passable</label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-item">
+                              <div class="title-sub">Votre avis : L’accompagnement sur la plateforme e-learning</div>
+                              <div class="input-items">
+                                <div class="input-item">
+                                  <div class="field">
+                                    <div class="ui radio checkbox radio-inline w-140 selected">
+                                      <input type="radio" name="item4" checked="">
+                                      <label>Très satisfaisant</label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="input-item">
+                                  <div class="field">
+                                    <div class="ui radio checkbox radio-inline w-140">
+                                      <input type="radio" name="item4">
+                                      <label>Satisfaisant</label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="input-item">
+                                  <div class="field">
+                                    <div class="ui radio checkbox radio-inline w-140">
+                                      <input type="radio" name="item4">
+                                      <label>Peu satisfaisant</label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="input-item">
+                                  <div class="field">
+                                    <div class="ui radio checkbox radio-inline w-140">
+                                      <input type="radio" name="item4">
+                                      <label>Passable</label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-item">
+                              <div class="title-sub">Avez-vous des suggestions à apporter ?</div>
+                              <div class="input-items">
+                                <div class="check-wrap">
+                                  <div class="textarea w-360">
+                                    <textarea></textarea>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><div id="mCSB_2_scrollbar_vertical" class="mCSB_scrollTools mCSB_2_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_2_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
+              <div class="bottom-pop-info">
+                <div class="icon"><img src="../../assets/images/info.svg"></div>
+                <div class="copy">
+                  Vous nous autorisez à publier les éléments de votre satisfaction sur les supports de communication web, seul votre prénom figurera sur le témoignage.
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade show" id="addCRCoach" role="tabpanel" aria-labelledby="addCRCoach-tab">
+              <div class="modal-body pop-content addCRCoach">
+                  <div class="top-sec cr-coach-wrap">
+                    <div class="form-wrap item-block">
+                      <div class="form-left">
+                        <div class="title text-black">
+                          <h3>Le stagiaire connaisait-il le programme de formation</h3>
+                        </div>
+                        <div class="input-items">
+                          <div class="input-item">
+                            <div class="field">
+                              <div class="ui radio checkbox radio-inline selected">
+                                <input type="radio" name="item6" checked="">
+                                <label>Oui</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="input-item">
+                            <div class="field">
+                              <div class="ui radio checkbox radio-inline">
+                                <input type="radio" name="item6">
+                                <label>Non</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="title text-black">
+                          <h3>La formation correspondait-elle aux attentes du stagiaire</h3>
+                        </div>
+                        <div class="input-items">
+                          <div class="input-item">
+                            <div class="field">
+                              <div class="ui radio checkbox radio-inline selected">
+                                <input type="radio" name="item5" checked="">
+                                <label>Oui</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="input-item">
+                            <div class="field">
+                              <div class="ui radio checkbox radio-inline">
+                                <input type="radio" name="item5">
+                                <label>Non</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="title text-black">
+                          <h3>Le stagiaire s est-il impliqué pendant la formation</h3>
+                        </div>
+                        <div class="input-items">
+                          <div class="input-item">
+                            <div class="field">
+                              <div class="ui radio checkbox radio-inline selected">
+                                <input type="radio" name="item7" checked="">
+                                <label>Oui</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="input-item">
+                            <div class="field">
+                              <div class="ui radio checkbox radio-inline">
+                                <input type="radio" name="item7">
+                                <label>Non</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-right">
+                        <div class="title text-black">
+                          <h3>Le programme a-t-il été vu dans son intégralité</h3>
+                        </div>
+                        <div class="input-items">
+                          <div class="input-item">
+                            <div class="field">
+                              <div class="ui radio checkbox radio-inline selected">
+                                <input type="radio" name="item8" checked="">
+                                <label>Oui</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="input-item">
+                            <div class="field">
+                              <div class="ui radio checkbox radio-inline">
+                                <input type="radio" name="item8">
+                                <label>Non</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="title text-black">
+                          <h3>Le stagiaire a t il progressé de façon satisfaisante</h3>
+                        </div>
+                        <div class="input-items">
+                          <div class="input-item">
+                            <div class="field">
+                              <div class="ui radio checkbox radio-inline selected">
+                                <input type="radio" name="item9" checked="">
+                                <label>Oui</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="input-item">
+                            <div class="field">
+                              <div class="ui radio checkbox radio-inline">
+                                <input type="radio" name="item9">
+                                <label>Non</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+              </div>
+              <div class="bottom-pop-info">
+                <div class="icon"><img src="../../assets/images/info.svg"></div>
+                <div class="copy">
+                  Vous nous autorisez à publier les éléments de votre satisfaction sur les supports de communication web, seul votre prénom figurera sur le témoignage.
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade show" id="addFacturation" role="tabpanel" aria-labelledby="addFacturation-tab">
+              <div class="modal-body pop-content">
+                <div class="top-sec facturation-wrap">
+                  <div class="form-wrap item-block">
+                    <div class="form-left">
+                      <div class="form-sub">
+                        <div class="form-item">
+                          <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/award.svg"></span>Montant Facturé </div>
+                          <div class="item-wrap">
+                            <div class="left">
+                              <div class="ui icon input custom-input input-w-340">
+                                <input type="text" placeholder="">
+                              </div>
+                            </div>
+                            <div class="right">
+                              <div class="input-items">
+                                <div class="input-item">
+                                  <div class="field">
+                                    <div class="ui radio checkbox radio-inline">
+                                      <input type="radio" name="">
+                                      <label>Payé</label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-item">
+                          <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/award.svg"></span>Coût Elearning</div>
+                          <div class="item-wrap">
+                            <div class="left">
+                              <div class="ui icon input custom-input input-w-340">
+                                <input type="text" placeholder="">
+                              </div>
+                            </div>
+                            <div class="right">
+                              <div class="input-items">
+                                <div class="input-item">
+                                  <div class="field">
+                                    <div class="ui radio checkbox radio-inline">
+                                      <input type="radio" name="">
+                                      <label>Payé</label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-item">
+                          <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/award.svg"></span>Coût Certification</div>
+                          <div class="item-wrap">
+                            <div class="left">
+                              <div class="ui icon input custom-input input-w-340">
+                                <input type="text" placeholder="">
+                              </div>
+                            </div>
+                            <div class="right">
+                              <div class="input-items">
+                                <div class="input-item">
+                                  <div class="field">
+                                    <div class="ui radio checkbox radio-inline">
+                                      <input type="radio" name="">
+                                      <label>Payé</label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-item">
+                          <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/award.svg"></span>Coût Coach</div>
+                          <div class="item-wrap">
+                            <div class="left">
+                              <div class="ui icon input custom-input input-w-340">
+                                <input type="text" placeholder="">
+                              </div>
+                            </div>
+                            <div class="right">
+                              <div class="input-items">
+                                <div class="input-item">
+                                  <div class="field">
+                                    <div class="ui radio checkbox radio-inline">
+                                      <input type="radio" name="">
+                                      <label>Payé</label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-item">
+                          <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/award.svg"></span>Coût Coach</div>
+                          <div class="item-wrap">
+                            <div class="left">
+                              <div class="ui icon input custom-input input-w-340">
+                                <input type="text" placeholder="">
+                              </div>
+                            </div>
+                            <div class="right">
+                              <div class="input-items">
+                                <div class="input-item">
+                                  <div class="field">
+                                    <div class="ui radio checkbox radio-inline">
+                                      <input type="radio" name="">
+                                      <label>Payé</label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-right">
+                      <div class="form-wrap type-4 ">
+                        <div class="form-item">
+                          <div class="title-sec"><span class="icon"><img src="../../assets/images/clipboard-text.svg" class="mCS_img_loaded"></span>N° Facture</div>
+                          <div class="item-wrap">
+                            <div class="left">
+                              <div class="ui icon input custom-input ">
+                                <input type="text" placeholder="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-item">
+                          <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/calendar-edit.svg" class="mCS_img_loaded"></span>Date Facturation</div>
+                          <div class="item-wrap">
+                            <div class="left">
+                              <div class="form-calender ">
+                                <input type="text" id="datepicker7" placeholder="17/10/2021" class="hasDatepicker">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-item">
+                          <div class="item-wrap">
+                            <div class="left">
+                              <div class="form-btn">
+                                <div class="btn"><a href="">Obtenir un N°</a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-wrap type-4 ">
+                        <div class="form-item">
+                          <div class="title-sec"><span class="icon"><img src="../../assets/images/clipboard-text.svg" class="mCS_img_loaded"></span>N° Avoir</div>
+                          <div class="item-wrap">
+                            <div class="left">
+                              <div class="ui icon input custom-input ">
+                                <input type="text" placeholder="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-item">
+                          <div class="title-sec"><span class="icon"><img src="../../assets/images/folder-icons/calendar-edit.svg" class="mCS_img_loaded"></span>Date Avoir</div>
+                          <div class="item-wrap">
+                            <div class="left">
+                              <div class="form-calender ">
+                                <input type="text" id="datepicker8" placeholder="17/10/2021" class="hasDatepicker">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-item">
+                          <div class="item-wrap">
+                            <div class="left">
+                              <div class="form-btn">
+                                <div class="btn"><a href="">Obtenir un N°</a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade show" id="sideButtonA" role="tabpanel" aria-labelledby="sideButtonA-tab">
+              <div class="modal-body pop-content">
+                <div class="moodal-table-wapper">
+                  <table class="table modal-table-table">
+                    <thead>
+                      <tr>
+                        <th scope="col">&nbsp;</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Sujet</th>
+                        <th scope="col">Commentaire</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row"><img src="../../assets/images/directbox-notif.svg"></th>
+                        <td>25/07/2021</td>
+                        <td>sujet titel  xxxxxx here</td>
+                        <td>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><img src="../../assets/images/call.svg"></th>
+                        <td>25/07/2021</td>
+                        <td>sujet titel  xxxxxx here</td>
+                        <td>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><img src="../../assets/images/directbox-notif.svg"></th>
+                        <td>25/07/2021</td>
+                        <td>sujet titel  xxxxxx here</td>
+                        <td>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><img src="../../assets/images/call.svg"></th>
+                        <td>25/07/2021</td>
+                        <td>sujet titel  xxxxxx here</td>
+                        <td>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade show" id="sideButtonB" role="tabpanel" aria-labelledby="sideButtonB-tab">
+              <div class="modal-body pop-content">
+                <div class="top-sec pop-lisitng-main">
+                  <div class="title-main">Observations</div>
+                  <div class="col-wrap">
+                    <div class="col-left">
+                      <div class="title-sec"><span class="icon"><img src="../../assets/images/moneys.svg"></span>Commercialisation</div>
+                    <div class="pop-listing-wap">
+                      <div class="listing-copy-scroller mCustomScrollbar _mCS_3 mCS_no_scrollbar"><div id="mCSB_3" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 170px;" tabindex="0"><div id="mCSB_3_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
+                        <ul>
+                          <li>
+                            <div class="close"><img src="../../assets/images/close-gray.svg" class="mCS_img_loaded"></div>
+                            <div class="listing-top">
+                              <div class="header">Mehdi Tounsi </div>
+                              <div class="date-time">
+                                <span class="date">date</span>
+                                <span class="date-txt primary">15/07/2021</span>
+                                <span>Heure</span>
+                                <span class="primary">11h36</span>
+                              </div>
+                            </div>
+                            <div class="listing-copy">
+                              <div class="icon"><img src="../../assets/images/message.svg" class="mCS_img_loaded"></div>
+                              <div class="text">
+                                Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="close"><img src="../../assets/images/close-gray.svg" class="mCS_img_loaded"></div>
+                            <div class="listing-top">
+                              <div class="header">Mehdi Tounsi </div>
+                              <div class="date-time">
+                                <span class="date">date</span>
+                                <span class="date-txt primary">15/07/2021</span>
+                                <span>Heure</span>
+                                <span class="primary">11h36</span>
+                              </div>
+                            </div>
+                            <div class="listing-copy">
+                              <div class="icon"><img src="../../assets/images/message.svg" class="mCS_img_loaded"></div>
+                              <div class="text">
+                                Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="close"><img src="../../assets/images/close-gray.svg" class="mCS_img_loaded"></div>
+                            <div class="listing-top">
+                              <div class="header">Mehdi Tounsi </div>
+                              <div class="date-time">
+                                <span class="date">date</span>
+                                <span class="date-txt primary">15/07/2021</span>
+                                <span>Heure</span>
+                                <span class="primary">11h36</span>
+                              </div>
+                            </div>
+                            <div class="listing-copy">
+                              <div class="icon"><img src="../../assets/images/message.svg" class="mCS_img_loaded"></div>
+                              <div class="text">
+                                Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div><div id="mCSB_3_scrollbar_vertical" class="mCSB_scrollTools mCSB_3_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_3_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
+                      <div class="model-pop-observation" id="popOne">
+                        <div class="top">
+                          <span>Mehdi Tounsi</span>
+                          <div class="close"><img src="../../assets/images/close-gray.svg" class="mCS_img_loaded"></div>
+                        </div>
+                        <div class="content-observation">
+                          <textarea></textarea>
+                        </div>
+                        <div class="observ-action">
+                          <span class="done btn-obs"><img src="../../assets/images/tick.svg"></span>
+                          <span class="btn-close btn-obs"><img src="../../assets/images/close-blue.svg"></span>
+                        </div>
+                      </div>
+                      <div class="bottom-btn">
+                        <div class="btn">
+                          <a class="popOne" href="JavaScript:void(0);"><span class="icon"><img src="../../assets/images/btn-add-white.png"></span> Observation</a>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="col-right">
+                      <div class="title-sec"><span class="icon"><img src="../../assets/images/archive-book-small.svg"></span>Formation</div>
+                    <div class="pop-listing-wap">
+                      <div class="listing-copy-scroller mCustomScrollbar _mCS_4 mCS_no_scrollbar"><div id="mCSB_4" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 170px;" tabindex="0"><div id="mCSB_4_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
+                        <ul>
+                          <li>
+                            <div class="close"><img src="../../assets/images/close-gray.svg" class="mCS_img_loaded"></div>
+                            <div class="listing-top">
+                              <div class="header">Mehdi Tounsi </div>
+                              <div class="date-time">
+                                <span class="date">date</span>
+                                <span class="date-txt primary">15/07/2021</span>
+                                <span>Heure</span>
+                                <span class="primary">11h36</span>
+                              </div>
+                            </div>
+                            <div class="listing-copy">
+                              <div class="icon"><img src="../../assets/images/message.svg" class="mCS_img_loaded"></div>
+                              <div class="text">
+                                Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="close"><img src="../../assets/images/close-gray.svg" class="mCS_img_loaded"></div>
+                            <div class="listing-top">
+                              <div class="header">Mehdi Tounsi </div>
+                              <div class="date-time">
+                                <span class="date">date</span>
+                                <span class="date-txt primary">15/07/2021</span>
+                                <span>Heure</span>
+                                <span class="primary">11h36</span>
+                              </div>
+                            </div>
+                            <div class="listing-copy">
+                              <div class="icon"><img src="../../assets/images/message.svg" class="mCS_img_loaded"></div>
+                              <div class="text">
+                                Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="close"><img src="../../assets/images/close-gray.svg" class="mCS_img_loaded"></div>
+                            <div class="listing-top">
+                              <div class="header">Mehdi Tounsi </div>
+                              <div class="date-time">
+                                <span class="date">date</span>
+                                <span class="date-txt primary">15/07/2021</span>
+                                <span>Heure</span>
+                                <span class="primary">11h36</span>
+                              </div>
+                            </div>
+                            <div class="listing-copy">
+                              <div class="icon"><img src="../../assets/images/message.svg" class="mCS_img_loaded"></div>
+                              <div class="text">
+                                Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div><div id="mCSB_4_scrollbar_vertical" class="mCSB_scrollTools mCSB_4_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_4_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
+                      <div class="model-pop-observation" id="popTwo">
+                        <div class="top">
+                          <span>Mehdi Tounsi</span>
+                          <div class="close"><img src="../../assets/images/close-gray.svg" class="mCS_img_loaded"></div>
+                        </div>
+                        <div class="content-observation">
+                          <textarea></textarea>
+                        </div>
+                        <div class="observ-action">
+                          <span class="done btn-obs"><img src="../../assets/images/tick.svg"></span>
+                          <span class="btn-close btn-obs"><img src="../../assets/images/close-blue.svg"></span>
+                        </div>
+                      </div>
+                      <div class="bottom-btn">
+                        <div class="btn">
+                          <a class="popTwo" href="JavaScript:void(0);"><span class="icon"><img src="../../assets/images/btn-add-white.png"></span> Observation</a>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+       
+          
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary btn-add"><span><img src="../../assets/images/plus-white.svg"></span>Ajouter</button>
+            <button type="button" class="btn btn-secondary btn-cancel" data-dismiss="modal">Annuler</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
